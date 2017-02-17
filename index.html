@@ -1,18 +1,27 @@
 <html>
 
 <head>
-  <title>Personal Password Generator</title>
+  <title>Password Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <div class="top-navbar">
     <ul class="left-side">
-      <li><a href="https://github.com/andrasat">Github</a></li>
-    </ul>
-    <ul class="right-side">
-      <li></li>
+      <li><a href="https://github.com/andrasat" target="_blank">My Github</a></li>
     </ul>
   </div>
+  <div class="main">
+    <h1>Password Generator</h1>
+    <p>Generate your own password by simply click on this button below, this 12 char password may contain combination of numbers, symbols, capital and lowercase letters. </p>
+    <button id="generate" onclick="generatePass()">Generate</button>
+    <p id="the-pass"></p>
+  </div>
+  <div class="footer">
+    <p>Made by Andra</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
