@@ -1,5 +1,9 @@
+// Declare generatePass() outside window
 var generatePass;
+
 window.onload = function () {
+
+  // Declare variables
   'use strict';
   var chars = {
       'lower': 'abcdefghijklmnopqrstuvwxyz',
@@ -12,12 +16,15 @@ window.onload = function () {
     selectProp,
     pass = '';
 
+  // Define function
   generatePass = function () {
 
-    pass = '';
-    document.getElementById('the-pass').innerHTML = '';
+    pass = ''; // reset pass
+    document.getElementById('the-pass').innerHTML = ''; // reset element
+
+    // Iterate length to insert char 1 by 1
     for (let i = 0; i < passLength; i++) {
-      count = 0;
+      count = 0; // reset randomize prop counter
       for (let prop in chars) {
         if (Math.random() < 1 / ++count) {
           selectProp = prop;
@@ -27,7 +34,7 @@ window.onload = function () {
       console.log(pass);
     }
 
-    document.getElementById('the-pass').innerHTML = 'This is your generated password : ' + pass;
+    document.getElementById('the-pass').innerHTML = 'This is your generated password : ' + '<span>' + pass + '</span>';
   }
 
 

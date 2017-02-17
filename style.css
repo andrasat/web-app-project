@@ -17,7 +17,14 @@ body {
   left: 0;
   height: auto;
   width: 100%;
-  ;
+}
+
+.top-navbar .left-side {
+  list-style: none;
+}
+
+.top-navbar .left-side a {
+  text-decoration: none;
 }
 
 
@@ -27,12 +34,30 @@ body {
 
 .main {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
-  margin: auto;
+  margin-top: -1em;
+  margin-bottom: 2em;
   height: auto;
   width: 80%;
   text-align: center;
+}
+
+.main h1 {
+  padding-bottom: 0.5em;
+}
+
+.main:hover {
+  cursor: default;
+}
+
+.main #the-pass {
+  display: inline-block;
+}
+
+.main #the-pass span:hover {
+  cursor: text;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 
